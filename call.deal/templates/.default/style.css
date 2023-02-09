@@ -1,0 +1,312 @@
+#initial-form-popup{
+    padding: 30px 0 30px 25px;
+}
+#popup-window-content-initial-form-popup{
+    overflow-y: scroll;
+}
+#popup-window-content-initial-form-popup::-webkit-scrollbar {  display: none;}
+#popup-window-content-initial-form-popup {-ms-overflow-style: none;}
+.deal-form {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+.deal-form h1,
+.deal-form h2,
+.deal-form h3,
+.deal-form h4 {
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+.deal-form__h3 {
+    width: 297px;
+}
+.deal-form__group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.deal-form__group_products table tr td {
+    position: relative;
+}
+.deal-form__group_products table thead th {
+    font-size: 11px;
+}
+.deal-form__group_products table thead tr th:first-child {
+    width: 300px;
+}
+.deal-form__group_products table tbody tr td:first-child {
+    padding-left: 0;
+}
+.deal-form__group_products table thead tr td:last-child {
+    width: 10px;
+    opacity: 0.5;
+}
+.deal-form__group_products table thead tr td:last-child:hover {
+    opacity: 1;
+}
+.deal-form__group_products table thead tr td:last-child span {
+    transition: all 750ms;
+    opacity: 0.1;
+}
+.deal-form__group_products table thead tr td:last-child span {
+    opacity: 1;
+    transform: scale(1.2);
+}
+.deal-form__group_products table tr td:last-child {
+    padding-right: 0!important;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 24px;
+}
+.deal-form__group>label {
+    width: 50%;
+}
+.deal-form__group>label:first-child {
+    margin-right: 15px;
+}
+.deal-form__group label span {
+    width: 100%;
+}
+.deal-form__group_products table thead tr td::placeholder {
+    font-size: 8px;
+}
+.deal-form__full-sum {
+    margin-left: auto;
+    font-size: 24px;
+}
+.deal-form__discount {
+    font-size: 13px;
+}
+.deal-form__button_opacitied {
+    opacity: 0.3;
+}
+.popup-window-close-icon:after {
+    width: 15px;
+    height: 15px;
+}
+/* width */
+.popup-window-content ::-webkit-scrollbar {
+    width: 0;
+}
+/* Track */
+.popup-window-content ::-webkit-scrollbar-track {
+    background: transparent;
+}
+/* Handle */
+.popup-window-content ::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+/* Handle on hover */
+.popup-window-content ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+#popup-with-goods {
+    width: 950px;
+    height: 540px;
+    overflow-y: scroll;
+}
+#popup-with-goods::-webkit-scrollbar {  display: none;}
+#popup-with-goods {-ms-overflow-style: none;}
+input::placeholder{
+    font-size: 10px;
+}
+input[data-good] {
+    width: 300px;
+}
+button[data-delete] {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    outline: none;
+}
+button[data-delete]:hover,
+button[data-delete]:active,
+button[data-delete]:visited,
+button[data-delete]:focus {
+    background-color: #ccc!important;
+    border: none;
+    outline: none;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.goods-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200%;
+    min-height: 30px;
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    z-index: 10;
+    background-color: #fff
+}
+.goods-wrapper::-webkit-scrollbar {  display: none;}
+.goods-wrapper {-ms-overflow-style: none;}
+.goods-wrapper>div {
+    min-height: 44px;
+    cursor: pointer;
+    margin-bottom: 1px;
+    padding: 0 45px 0 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.goods-wrapper>div:hover {
+    background-color: #ebeff2;
+}
+.small-loader {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+.catalog-item__invisible {
+    display: none!important;
+}
+.success-heading{text-align: center;}
+.success-message{text-align: center;}
+.documents__wrapper {
+    margin-bottom: 30px;
+}
+.document-created {
+    position: relative;
+    height: 25px;
+}
+.document-created__inner {
+    position: absolute;
+    width: 844px;
+    display: flex;
+    align-items: center;
+}
+.document-created__inner>div {
+    margin-right: 15px;
+}
+.document-created__name {
+    border-bottom: 1px solid #333;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    top: -2px;
+}
+.document-created__open {
+    cursor: pointer;
+}
+.document-created__open img {
+    transform: rotate(-90deg);
+    position: relative;
+    top: -2px;
+}
+.deal-form__group .form-control {
+    height: 39px!important;
+}
+.document-created__edited_hidden {
+    display: none;
+}
+input[name="STAGE_RADIO"] {
+    opacity: 0;
+}
+.im-phone-sidebar-tab {
+    text-align: center;
+    display: inline-block;
+    min-height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEGIN: стили поиска адресов */
+.region-live-wrapper{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.addresses-results{
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: calc(100% - 1px);
+    display: none;
+    z-index: 1000;
+    border-right: 1px solid #e8e8e8;
+    max-height: 150px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #ccc;
+}
+/* width */
+.addresses-results::-webkit-scrollbar {
+    width: 0;
+}
+/* Track */
+.addresses-results::-webkit-scrollbar-track {
+    background: transparent;
+}
+/* Handle */
+.addresses-results::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+/* Handle on hover */
+.addresses-results::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+.addresses-results>div{
+    padding-left:15px;
+    height:49px;
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+    border-bottom:1px solid #e8e8e8;
+    font-size: 13px;
+    line-height: 14px;
+}
+.addresses-results>div:hover{
+    background-color: #e8e8e8;
+}
+.input-with-margin-bottom{
+    margin-bottom:40px;
+}
+#sdek-delivery-inputs{
+    padding-right:15px;
+}
+#wait_main{
+    position:fixed!important;
+    top:50%!important;
+    left:50%!important;
+    transform: translate(-50%);
+}
+@media(max-width:991px){
+    .input-with-margin-bottom{margin-bottom:0;}
+    .no-padding-on-mobile{padding-left:0; padding-right:0;}
+}
+/* end: стили поиска адресов */

@@ -1,0 +1,15 @@
+AddEventHandler("main", "OnBeforeProlog", "MyOnBeforePrologHandler", 50);
+
+function MyOnBeforePrologHandler()
+{
+    CJSCore::RegisterExt(
+        "call.deal",
+        array(
+            "js" => "/local/components/devconsult/call.deal/templates/.default/script.js",
+            "css" => "/local/components/devconsult/call.deal/templates/.default/style.css",
+            "rel" => ['popup', 'ajax', 'fx', 'ls', 'date', 'json', 'window','jquery'],
+            "skip_core" => false,
+        )
+    );
+    CJSCore::Init(['call.deal']);
+}
